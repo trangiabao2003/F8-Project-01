@@ -104,7 +104,16 @@
 				<nav class="navbar">
 					<!-- Tablet & Mobile Menu -->
 					<label for="menu-checkbox" class="toggle-menu">
-						<svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><path fill="currentColor" d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+						<svg
+							xmlns="http://www.w3.org/2000/svg"
+							height="1em"
+							viewBox="0 0 448 512"
+						>
+							<path
+								fill="currentColor"
+								d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
+							/>
+						</svg>
 					</label>
 
 					<!-- Logo -->
@@ -132,7 +141,13 @@
 
 		<!-- Tablet/Mobile header -->
 		<header class="mobile-header">
-			<input type="checkbox" name="" id="menu-checkbox" class="menu-checkbox" hidden>
+			<input
+				type="checkbox"
+				name=""
+				id="menu-checkbox"
+				class="menu-checkbox"
+				hidden
+			/>
 
 			<!-- Overlay -->
 			<label for="menu-checkbox" class="menu-overlay"></label>
@@ -140,19 +155,19 @@
 			<!-- Menu content -->
 			<div class="menu-drawer">
 				<!-- Logo -->
-					<a href="#">
-						<img src="./assets/img/logo.svg" alt="Besnik." />
-					</a>
+				<a href="#">
+					<img src="./assets/img/logo.svg" alt="Besnik." />
+				</a>
 
 				<!-- Navigation -->
-					<ul id="mobile-nav"></ul>
-					<script>
-						const pcNav = document.querySelector('#pc-nav');
-						const mobileNav = document.querySelector('#mobile-nav');
+				<ul id="mobile-nav"></ul>
+				<script>
+					const pcNav = document.querySelector("#pc-nav");
+					const mobileNav = document.querySelector("#mobile-nav");
 
-						// Copy from PC nav -> Mobile nav
-						mobileNav.innerHTML = pcNav.innerHTML;
-					</script>
+					// Copy from PC nav -> Mobile nav
+					mobileNav.innerHTML = pcNav.innerHTML;
+				</script>
 			</div>
 		</header>
 
@@ -194,7 +209,7 @@
 					</div>
 					<div class="row row-desc">
 						<p class="desc">More than 45,000+ companies trust besnik</p>
-						<p class="desc">5 Star Ratings (2k+ Review)</p>
+						<p class="desc hide-on-mobile">5 Star Ratings (2k+ Review)</p>
 					</div>
 					<div class="images">
 						<a href="#!">
@@ -374,6 +389,10 @@
 								</div>
 							</div>
 						</div>
+					</div>
+
+					<div class="view-all show-on-mobile">
+						<a href="#!" class="btn">View All Properties</a>
 					</div>
 				</div>
 			</div>
